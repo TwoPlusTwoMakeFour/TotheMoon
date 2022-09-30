@@ -33,7 +33,7 @@
 /* ------------------------ ASTRONAUT ------------- */
 /* ------------------------------------------------ */
 .astronaut {
-  background-image: url('../img/naut.jpg');
+  background-image: url('img/naut.jpg');
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -62,7 +62,7 @@
 /* ------------------------------------------------ */
 
 .text-page {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/starbg.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/starbg.jpg');
   background-size: cover;
   color: rgb(210, 210, 210);
   font-family: 'Rubik', sans-serif;
@@ -422,7 +422,7 @@ button.open span:hover:after {
   .Right h1{
     display: none;
   }
-  img {
+  .img {
     display: none;
   }
   .text-page{
