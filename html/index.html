@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <title>To the Moon!</title>
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="../style/normalize.css">
+  <link rel="stylesheet" href="../style/style.css" type="text/css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+  <div id="cookies">
+    I don't know where I'm going from here, but I promise it won't be boring. You should accept cookies.
+    <button id="accept">ACCEPT</button>
+    <script>
+      const acceptBtn = document.querySelector('#accept');
+      acceptBtn.addEventListener('click', accepted);
+      function accepted() {
+        const cookies = document.getElementById('cookies');
+        cookies.style.display = 'none';
+      }
+    </script>
+  </div>
+  <section class="full-height astronaut">
+    <div class="heading-box">
+      <div class="text">To the moon</div>
+      <div class="link">
+        <span class="arrow0"></span>
+        <span class="arrow1"></span>
+        <span class="arrow2"></span>
+        Read our story
+      </div>
+    </div>
+    <button id="menu">
+      <span>
+      </span>
+    </button>
+    <div id="OpenMenu">
+      <h1>OUR STORY</h1>
+        <h1><span>SPACE</span> <span>VENTURES</span></h1>
+      <h1><span>ABOUT</span></h1>
+      <h1><span>MAJOR TOM</span></h1>
+    </div>
+    <script>
+      const menuBtn = document.querySelector('#menu');
+      menuBtn.addEventListener('click', toggleMenuClass);
+      function toggleMenuClass() {
+        const Meny = document.getElementById('OpenMenu');
+        const TTM = document.getElementsByClassName('astronaut')[0];
+        TTM.classList.toggle('gone');
+        menuBtn.classList.toggle('open');
+        Meny.classList.toggle('show');
+      }
+   </script>
+    <div class="mobilPil">
+      <span id="arrow0"></span>
+      <span id="arrow1"></span>
+      <span id="arrow2"></span>
+    </div>
+  </section>
+  <section class="full-height text-page">
+    <div class="Left">
+      <div class="SpaceVentures">
+        <h1><span>Space</span> <span>Ventures</span></h1>
+      </div>
+      <div >
+        <h2>Ground Control to Major Tom</h2>
+        <p>Ground Control to Major Tom. Take your protein pills and put your helmet on. Ground Control to Major Tom (ten, nine, eight, seven, six). Commencing countdown, engines on (five, four, three). Check ignition and may God's love be with you (two, one, liftoff). This is Ground Control to Major Tom.</p>
+        You've really made the grade. And the papers want to know whose shirts you wear. Now it's time to leave the capsule if you dare. This is Major Tom to Ground Control. I'm stepping through the door.
+      </div>
+      <div>
+        <q>And I'm floating in a most peculiar way. And the stars look very different today. For here.</q>
+      </div>
+    </div>
+    <div class="Right">
+      <div class="textR">
+        <h1>Persistence is very important. You should not give up unless you are forced to give up.</h1>
+      </div>
+      <div class="textR">
+        Am I sitting in a tin can. Far above the world. Planet Earth is blue. And <br/>there's nothing I can do. Though I'm past one hundred thousand miles. <br/>I'm feeling very still. And I think my spaceship.<br/> knows which way to go. Tell my wife I love her<br/> very much she knows.<p>
+        Ground Control to Major Tom. Your circuit's dead, there's <img src="img/major_tom.jpg" alt="David Bowie"/><br/>something wrong. Can you hear me, Major Tom? Can <br/>you hear me, Major Tom? Can you hear me, Major Tom?<br/> Can you "Here am I floating 'round my tin can. Far above the moon.<br/></p>
+        Planet Earth is blue<p>
+        And there's nothing I can do</p>
+        <div class="TomLink">
+         <a>Read more about Major Tom
+            <span class="arrow0"></span>
+            <span class="arrow1"></span>
+            <span class="arrow2"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
